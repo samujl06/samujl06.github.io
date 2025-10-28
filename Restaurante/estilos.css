@@ -1,10 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;
   color: #333;
+  text-align: center;
   margin: 0;
   padding: 20px;
-  text-align: center;
 }
 
 h1 {
@@ -12,28 +12,44 @@ h1 {
 }
 
 h2 {
-  color: #4a4a4a;
-  margin-top: 30px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-p {
-  font-size: 18px;
-  margin: 10px 0;
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
 }
 
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #ddd;
+}
+
+/* Colores de asignaturas */
+.prog { background-color: #ff9999; }   /* Rojo claro */
+.sin { background-color: #99ccff; }    /* Azul claro */
+.badat { background-color: #a8e6cf; }  /* Verde menta */
+.lmsgi { background-color: #b39ddb; }  /* Lila */
+.endes { background-color: #ffcc80; }  /* Naranja claro */
+.ipe { background-color: #f48fb1; }    /* Rosa */
+.asp { background-color: #ce93d8; }    /* Violeta claro */
+.dasgps { background-color: #fff176; } /* Amarillo */
+
+/* Enlace */
 a {
+  display: inline-block;
+  margin-top: 20px;
   color: #1565c0;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #0d47a1;
-}
-
-img {
-  width: 300px;
-  border-radius: 10px;
-  margin: 20px 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
