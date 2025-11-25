@@ -2,17 +2,43 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Restaurante El Grillo</title>
+
+  <meta name="description" content="Restaurante El Grillo — Recetas tradicionales como tortilla de patatas, croquetas de jamón y fabada asturiana.">
+  <meta name="keywords" content="Restaurante El Grillo, recetas, tortilla de patatas, croquetas, fabada">
+  <meta name="author" content="Restaurante El Grillo">
+
   <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-  <h1>Restaurante El Grillo</h1>
-  <p>Bienvenidos a nuestra web de recetas.</p>
-  <img src= "Imagenes/Bar.jpeg" alt = "foto bar">
 
-  <h2>Recetas</h2>
-  <p><a href="tortillapatatas.html">Tortilla de Patatas</a></p>
-  <p><a href="croquetas.html">Croquetas de Jamon</a></p>
-  <p><a href="fabada.html">Fabada Asturiana</a></p>
+<body>
+  <header class="header-principal">
+    <h1 class="titulo-restaurante">Restaurante El Grillo</h1>
+    <p class="descripcion">Bienvenidos a nuestra web de recetas.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <img src="Imagenes/Bar.jpeg" alt="Foto del bar">
+
+      <h2>Recetas</h2>
+
+      <nav class="navegacion-principal" aria-label="Recetas Disponibles">
+        <ul>
+          <li><a href="tortillapatatas.html">Tortilla de Patatas</a></li>
+          <li><a href="croquetas.html">Croquetas de Jamón</a></li>
+          <li><a href="fabada.html">Fabada Asturiana</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="footer-principal">
+    <p>&copy; 2025 Restaurante El Grillo</p>
+  </footer>
+
 </body>
 </html>
+

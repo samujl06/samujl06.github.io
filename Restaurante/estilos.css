@@ -9,6 +9,7 @@ body {
 
 h1 {
   color: #2e7d32;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -16,9 +17,15 @@ h2 {
   margin-top: 30px;
 }
 
+
 p {
   font-size: 18px;
   margin: 10px 0;
+}
+
+.descripcion {
+  font-style: italic;
+  color: #555;
 }
 
 a {
@@ -42,13 +49,44 @@ img {
   color: #e65100;
 }
 
-.descripcion {
-  font-style: italic;
-  color: #555;
-}
-
 .tabla-horario {
   margin: 20px auto;
   border-collapse: collapse;
   width: 60%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.navegacion-principal ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navegacion-principal ul li {
+  margin: 10px 0;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  width: 80%;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
 }
