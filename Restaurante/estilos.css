@@ -15,8 +15,8 @@ h1 {
 h2 {
   color: #4a4a4a;
   margin-top: 30px;
+  margin-bottom: 15px;
 }
-
 
 p {
   font-size: 18px;
@@ -28,6 +28,7 @@ p {
   color: #555;
 }
 
+/* ENLACES GENERALES (texto) */
 a {
   color: #1565c0;
   text-decoration: none;
@@ -36,6 +37,23 @@ a {
 a:hover {
   text-decoration: underline;
   color: #0d47a1;
+}
+
+/* ENLACES EN NAVEGACIÓN (botones) */
+.navegacion-principal a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1565c0;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 200px;
+  margin: 5px 0;
+}
+
+.navegacion-principal a:hover {
+  background-color: #0d47a1;
+  text-decoration: none;
 }
 
 img {
@@ -89,4 +107,107 @@ img {
   .grid-2 {
     grid-template-columns: 1fr;
   }
-} 
+}
+
+.ingredientes ul,
+.preparacion ol {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  padding: 0;
+  display: inline-block;
+}
+
+.ingredientes ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+  display: inline-block;
+}
+
+.ingredientes ul li {
+  margin: 8px 0;
+  padding: 0;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.preparacion ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  text-align: left;
+  display: inline-block;
+}
+
+.preparacion ol li {
+  margin: 8px 0;
+  padding: 0;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.ingredientes ul li strong {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.ingredientes,
+.preparacion,
+.consejos,
+.nota-importante {
+  text-align: center;
+}
+
+.ingredientes > ul,
+.preparacion > ol {
+  display: inline-block;
+  text-align: left;
+}
+
+.formulario {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario div {
+  margin-top: 10px;
+}
+
+.formulario button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.formulario button:hover {
+  background-color: #1b5e20;
+}
+
+.footer-principal {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #eee;
+  border-radius: 5px;
+}

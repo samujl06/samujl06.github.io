@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Amigos de la Informática</title>
+  <link rel="stylesheet" href="Restaurante/estilos.css">
+</head>
+<body>
+  <header class="header-principal">
+    <h1>Club "Amigos de la Informática"</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Rellena el siguiente cuestionario</h2>
+      
+      <form class="formulario">
+        <label>Nombre</label>
+        <input type="text" required>
+        
+        <label>Domicilio</label>
+        <input type="text" required>
+        
+        <label>País de origen</label>
+        <select>
+          <option>España</option>
+          <option>Portugal</option>
+          <option>Francia</option>
+        </select>
+        
+        <label>Fecha de nacimiento</label>
+        <input type="date" required>
+        
+        <label>Correo electrónico</label>
+        <input type="email" required>
+        
+        <label>Teléfono</label>
+        <input type="tel">
+        
+        <label>Estado civil</label>
+        <div>
+          <label><input type="radio" name="estado" required> Solter@</label>
+          <label><input type="radio" name="estado"> Casad@</label>
+          <label><input type="radio" name="estado"> Separad@</label>
+          <label><input type="radio" name="estado"> Viud@</label>
+        </div>
+        
+        <label>Sexo</label>
+        <div>
+          <label><input type="radio" name="sexo" required> Hombre</label>
+          <label><input type="radio" name="sexo"> Mujer</label>
+        </div>
+        
+        <label>Actividades favoritas</label>
+        <div>
+          <label><input type="checkbox"> Hacer deporte</label>
+          <label><input type="checkbox"> Salir con amigos</label>
+          <label><input type="checkbox"> Ver series</label>
+          <label><input type="checkbox"> Senderismo</label>
+          <label><input type="checkbox"> Ir al cine</label>
+          <label><input type="checkbox"> Escuchar música</label>
+        </div>
+        
+        <label>Motivo para ingresar en el club</label>
+        <textarea rows="4"></textarea>
+        
+        <label>Película favorita</label>
+        <input type="text">
+        
+        <button type="submit">Enviar solicitud</button>
+      </form>
+      
+      <p><a href="../index.html">← Volver al Menú Principal</a></p>
+    </section>
+  </main>
+
+  <footer class="footer-principal">
+    <p>&copy; 2025</p>
+  </footer>
+</body>
+</html>
