@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+.titulo-activo {
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+}
