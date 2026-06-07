@@ -2,53 +2,164 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Formulario I</title>
-  <link rel="stylesheet" href="Restaurante/estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hoja de inscripción en los Ciclos Formativos de Grado Superior">
+  <meta name="keywords" content="inscripción, ciclos formativos, grado superior, formulario">
+  <meta name="author" content="IES Inca Garcilaso">
+  <title>Formulario I – Hoja de Inscripción</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header class="header-principal">
-    <h1>Formulario I</h1>
+
+  <header>
+    <h1 style="font-size:1rem; color:#333;">IES Inca Garcilaso</h1>
   </header>
 
   <main class="container">
-    <section class="card">
-      <form class="formulario">
-        <label>Nombre completo</label>
-        <input type="text" required>
-        
-        <label>Correo electrónico</label>
-        <input type="email" required>
-        
-        <label>Teléfono</label>
-        <input type="tel">
-        
-        <label>Fecha de nacimiento</label>
-        <input type="date">
-        
-        <label>Género</label>
-        <div>
-          <label><input type="radio" name="genero" value="hombre"> Hombre</label>
-          <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+    <article class="inscripcion-card">
+
+      <h1>HOJA DE INSCRIPCION</h1>
+      <h2>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+
+      <form>
+
+        <!-- DATOS PERSONALES -->
+        <fieldset class="inscripcion-fieldset" style="background-color:#d9d9d9;">
+          <legend>Datos Personales</legend>
+
+          <div class="fila-campos">
+            <div class="campo-grupo">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre">
+            </div>
+            <div class="campo-grupo">
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" id="apellidos" name="apellidos">
+            </div>
+            <div class="campo-grupo">
+              <label for="dni">DNI</label>
+              <input type="text" id="dni" name="dni">
+            </div>
+          </div>
+
+          <div class="fila-campos">
+            <div class="campo-grupo">
+              <label for="localidad">Localidad de Nacimiento</label>
+              <input type="text" id="localidad" name="localidad">
+            </div>
+            <div class="campo-grupo">
+              <label for="provincia">Provincia:</label>
+              <select id="provincia" name="provincia">
+                <option>Huelva</option>
+                <option>Sevilla</option>
+                <option>Cádiz</option>
+                <option>Málaga</option>
+                <option>Córdoba</option>
+                <option>Granada</option>
+                <option>Jaén</option>
+                <option>Almería</option>
+              </select>
+            </div>
+            <div class="campo-grupo">
+              <label for="fecha-nac">Fecha de Nacimiento</label>
+              <input type="text" id="fecha-nac" name="fecha_nacimiento" placeholder="dd/mm/aaaa">
+            </div>
+          </div>
+
+          <div class="fila-campos">
+            <div class="campo-grupo" style="flex:2">
+              <label for="direccion">Dirección</label>
+              <input type="text" id="direccion" name="direccion">
+            </div>
+            <div class="campo-grupo">
+              <label for="cp">Código Postal:</label>
+              <input type="text" id="cp" name="codigo_postal">
+            </div>
+          </div>
+
+        </fieldset>
+
+        <!-- FORMA DE ACCESO -->
+        <fieldset class="inscripcion-fieldset" style="background-color:#e8a87c;">
+          <legend>Forma de Acceso</legend>
+
+          <div class="opcion-acceso">
+            <label>
+              <input type="radio" name="acceso" value="directo">
+              Directo
+            </label>
+            <div class="sub-opcion">
+              <label>
+                <input type="radio" name="acceso" value="bachillerato">
+                Bachillerato Log Modalidad
+                <input type="text" placeholder="">
+              </label>
+              <label>
+                <input type="radio" name="acceso" value="experimental">
+                Experimental
+              </label>
+              <label>
+                <input type="radio" name="acceso" value="cou">
+                COU Opción
+                <input type="text" placeholder="">
+              </label>
+              <label>
+                <input type="radio" name="acceso" value="fp2">
+                FP2
+              </label>
+              <label>
+                <input type="radio" name="acceso" value="otros">
+                Otros (especifique)
+                <input type="text" placeholder="">
+              </label>
+            </div>
+            <label>
+              <input type="radio" name="acceso" value="prueba_libre">
+              Prueba Libre
+            </label>
+          </div>
+
+        </fieldset>
+
+        <!-- DOCUMENTOS ADJUNTOS -->
+        <fieldset class="inscripcion-fieldset" style="background-color:#8b6347; color:white;">
+          <legend style="color:#333;">Documentos Adjuntos</legend>
+
+          <div class="doc-fila">
+            <label>
+              <input type="checkbox" name="doc_dni">
+              Fotocopia DNI
+            </label>
+            <label>
+              <input type="checkbox" name="doc_cert">
+              Certificado Académico
+            </label>
+            <div class="doc-otro">
+              <label>
+                <input type="checkbox" name="doc_otros">
+                Otros documentos (especifique)
+              </label>
+              <input type="text" name="doc_otros_texto" placeholder="">
+            </div>
+          </div>
+
+        </fieldset>
+
+        <div class="inscripcion-botones">
+          <button type="submit">Enviar Solicitud</button>
+          <button type="reset">Limpiar datos</button>
         </div>
-        
-        <label>Mensaje</label>
-        <textarea rows="4"></textarea>
-        
-        <label>
-          <input type="checkbox" required>
-          Acepto la política de privacidad
-        </label>
-        
-        <button type="submit">Enviar</button>
+
       </form>
-      
-      <p><a href="../index.html">← Volver al Menú Principal</a></p>
-    </section>
+
+      <p><a href="index.html">← Volver al índice</a></p>
+
+    </article>
   </main>
 
   <footer class="footer-principal">
-    <p>&copy; 2025</p>
+    <p>&copy; 2025 IES Inca Garcilaso</p>
   </footer>
+
 </body>
 </html>
